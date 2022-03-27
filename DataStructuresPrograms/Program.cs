@@ -8,6 +8,7 @@ using DataStructuresPrograms.Code.Objects;
 using System.Text.RegularExpressions;
 using DataStructuresPrograms.Code.Algo;
 using DataStructuresPrograms.Code.Basic;
+using DataStructuresPrograms.Code.Programs;
 
 namespace DataStructuresPrograms
 {
@@ -142,6 +143,37 @@ namespace DataStructuresPrograms
             #region prime factorisation
             //PrintObject.Print(NumberOperations.PrimeFactorisation(99));
             //PrintObject.Print(NumberOperations.PrimeFactorisationSieve(99));
+            //NumberOperations.PrimeSegmentedSieve(200,250);
+            #endregion
+            #region Alice and Candies
+            //AliceAndCandies.Solution(45);
+            #endregion
+            #region coprimes
+            //Coprimes.Soultion(30);
+            #endregion
+            #region Extended Euclidean
+            //ax+by=GCD(a,b) solve x and y
+            //PrintObject.Print(MathOperations.ExtEuclidean(41,97));
+            #endregion
+            #region Multiplication Modulo inverse
+            //(a * x)%m=1
+            //PrintObject.Print(MatrixMultiplicationInverse.Solution(6,7));
+            #endregion
+            #region Linear Diophantine Equation
+            //PrintObject.Print(LinearDiophantineEquations.Solution(18,30,240));
+            #endregion
+            #region GCDString
+            //GCDStrings.Solution(2,"123");
+            #endregion
+            #region Backtracing
+            //Backtracing.SubSets("abhi");
+            //Backtracing.SubSets("abhi", "");
+            #endregion
+            #region Backtracing programs
+            //Backtracing.Permutaion("abhi");
+            //Backtracing.GetBrackets(3);
+            //Backtracing.NQueen(8,null,0);
+            Backtracing.NQueenSolution(8,new int[8,8],0);
             #endregion
 
 

@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Algo\ArrayRotation.cs" />
+    <Compile Include="Code\Basic\Backtracing.cs" />
     <Compile Include="Code\Basic\NumberOperations.cs" />
     <Compile Include="Code\Objects\BigInteger.cs" />
     <Compile Include="Code\Algo\Fibonacci.cs" />
@@ -124,10 +125,16 @@
     <Compile Include="Code\Basic\BinaryOperations.cs" />
     <Compile Include="Code\Algo\Combinations.cs" />
     <Compile Include="Code\Basic\MathOperations.cs" />
+    <Compile Include="Code\Programs\AliceAndCandies.cs" />
+    <Compile Include="Code\Programs\Coprimes.cs" />
+    <Compile Include="Code\Programs\GCDStrings.cs" />
+    <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
+    <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
     <Compile Include="Code\Objects\Tree.cs" />
     <Compile Include="Code\Print\PrintObject.cs" />
     <Compile Include="Extensions\ArrayExtensions.cs" />
+    <Compile Include="Extensions\StringExt.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -135,8 +142,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Code\Programs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

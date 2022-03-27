@@ -14,6 +14,17 @@ namespace DataStructuresPrograms.Code.Print
         {
             Console.WriteLine(dynamic);
         }
+        internal static void Print<T>(T[,] arr)
+        {
+            for(int i = 0; i < arr.GetLength(0); i++)
+            {
+                for(int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i,j]}\t");
+                }
+                Console.WriteLine();
+            }
+        }
         internal static void Print<T>(T[] arr)
         {
             foreach(T i in arr)
@@ -60,5 +71,14 @@ namespace DataStructuresPrograms.Code.Print
                 Console.WriteLine($"{pair.Key} : {pair.Value}");
             }
         }
+
+        internal static void Print(params object[] objects)
+        {
+            foreach(dynamic obj in objects)
+            {
+                PrintObject.Print(obj);
+            }
+        }
+
     }
 }

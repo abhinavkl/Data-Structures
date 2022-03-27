@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataStructuresPrograms.Code.Algo;
+using DataStructuresPrograms.Code.Print;
 
 namespace DataStructuresPrograms.Code.Basic
 {
@@ -128,6 +129,25 @@ namespace DataStructuresPrograms.Code.Basic
                 return 0;
             int prod = a * b;
             return prod / GCD(a,b);
+        }
+
+        //ax+by=GCD(a,b)
+        public static int[] ExtEuclidean(int a,int b)
+        {
+            int[] xy = new int[3];
+            if (b == 0)
+            {
+                xy[0] = 1;
+                xy[1] = 0;
+                xy[2] = a;
+            }
+            else {
+                xy = ExtEuclidean(b,a%b);
+                int temp = xy[0];
+                xy[0] = xy[1];
+                xy[1] =temp- (a/b)*xy[0];
+            }
+            return xy;
         }
     }
 }

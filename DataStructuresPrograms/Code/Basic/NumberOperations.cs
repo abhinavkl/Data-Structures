@@ -196,9 +196,48 @@ namespace DataStructuresPrograms.Code.Basic
             }
             return pairs;
         }
-        public static void PrimeSegmentedSieve(int n)
+        public static void PrimeSegmentedSieve(int m,int n)
         {
+            int max = 100000;
+            int[] sieves = new int[max+1 + 1];
+            int[] segments = new int[n - m + 1];
+            List<int> primes = new List<int>();
+            for(long i = 2; i <= max; i++)
+            {
+                if (sieves[i] == 0)
+                    primes.Add((int)i);
+                for(long j = i * i; j <= max; j += i)
+                {
+                    sieves[i] = 1;
+                }
+            }
 
+            foreach (var item in primes)
+            {
+                if(item*item > n)
+                {
+                    break;
+                }
+
+                int start = (m / item) * item;
+                if(item>=m && item <= n)
+                {
+                    start = 2 * item;
+                }
+                for(int i = start; i <= n; i += item)
+                {
+                    if (i < m)
+                        continue;
+                    segments[i - m] = 1;
+                }
+            }
+            for(int i = m; i <= n; i++)
+            {
+                if(segments[i-m]==0 && i != 1)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
