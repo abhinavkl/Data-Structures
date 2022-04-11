@@ -115,7 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\Algo\ArrayRotation.cs" />
+    <Compile Include="Code\Algo\Permutations.cs" />
     <Compile Include="Code\Basic\Backtracing.cs" />
+    <Compile Include="Code\Basic\BinarySearch.cs" />
+    <Compile Include="Code\Basic\DivideNConquer.cs" />
+    <Compile Include="Code\Basic\Greedy.cs" />
     <Compile Include="Code\Basic\NumberOperations.cs" />
     <Compile Include="Code\Objects\BigInteger.cs" />
     <Compile Include="Code\Algo\Fibonacci.cs" />
@@ -125,11 +129,15 @@
     <Compile Include="Code\Basic\BinaryOperations.cs" />
     <Compile Include="Code\Algo\Combinations.cs" />
     <Compile Include="Code\Basic\MathOperations.cs" />
+    <Compile Include="Code\Objects\SegmentTree.cs" />
     <Compile Include="Code\Programs\AliceAndCandies.cs" />
     <Compile Include="Code\Programs\Coprimes.cs" />
     <Compile Include="Code\Programs\GCDStrings.cs" />
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
+    <Compile Include="DS\Arrays\ArrayPrograms.cs" />
+    <Compile Include="DS\Arrays\Rotation.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
     <Compile Include="Code\Objects\Tree.cs" />
     <Compile Include="Code\Print\PrintObject.cs" />

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataStructuresPrograms.Extensions;
+using DataStructuresPrograms.Code.Objects;
 
 namespace DataStructuresPrograms.Code.Basic
 {
@@ -270,14 +271,14 @@ namespace DataStructuresPrograms.Code.Basic
             {
                 int quo = (index) / 3;
                 int rem = (index) % 3;
-                int centerx = curRow / 3; centerx = 3 * centerx + 1;
-                int centery = curCol / 3; centery = 3 * centery + 1;
-                if (sudoku[index, curCol] == value || sudoku[curRow, index] == value || sudoku[centerx + quo-1, centery + rem-1] == value)
+                int centerx = (curRow / 3)*3;
+                int centery = (curCol / 3)*3;
+                if (sudoku[index, curCol] == value || sudoku[curRow, index] == value || sudoku[centerx + quo, centery + rem] == value)
                     return false;
             }
             return true;
         }
-        public static bool SudokuSoln(int[,] sudoku, int curRow = 0, int curCol = 0, int lastRow = 0, int lastCol = 0)
+        public static bool SudokuSoln(int[,] sudoku, int curRow = 0, int curCol = 0)
         {
             if (curRow == sudoku.GetLength(0)-1 && curCol==sudoku.GetLength(0))
             {
@@ -292,14 +293,13 @@ namespace DataStructuresPrograms.Code.Basic
 
             if (sudoku[curRow, curCol] == 0)
             {
-                lastRow = curRow; lastCol = curCol;
                 for (int value = 1; value <= sudoku.GetLength(0); value++)
                 {
 
                     if (IsSudokuSolvable(sudoku, curRow, curCol, value))
                     {
                         sudoku[curRow, curCol] = value;
-                        if (SudokuSoln(sudoku, curRow, curCol + 1, lastRow, lastCol))
+                        if (SudokuSoln(sudoku, curRow, curCol + 1))
                             return true;
                         sudoku[curRow, curCol] = 0;
                     }
@@ -311,9 +311,74 @@ namespace DataStructuresPrograms.Code.Basic
         }
 
 
+        public static bool IsPalindrome(string str,int first=0,int second=0)
+        {
+            if (first == 0 && second == 0)
+                second = str.Length - 1;
+            if (first >= second)
+                return true;
+            return str[first]==str[second] && IsPalindrome(str,first+1,second-1);
+        }
 
 
+        static int PowerSumSolution(int[] powers,int curIndex,int curSum,int target)
+        {
+            if (curSum > target || curIndex == powers.Length)
+                return 0;
+            if (curSum == target)
+            {
+                Console.WriteLine((curIndex -1)+ " "+curSum);
+                return 1;
+            }
+            int sol = 0;
+            sol+=PowerSumSolution(powers, curIndex + 1, curSum, target);
+            sol+=PowerSumSolution(powers,curIndex+1,curSum+powers[curIndex],target);
+            return sol;
+        }
 
+        public static void PowerSum(int n,int k,int rem=0,int target=-1)
+        {
+            if (target == -1) target = n;
+            int max = (int)MathOperations.NegativePower(n,k);
+            int[] powers = new int[max+1];
+            for(int i = 0; i <= max; i++)
+            {
+                powers[i] = (int)Math.Pow(i,k);
+            }
+            PrintObject.Print(powers);
+            int soln = PowerSumSolution(powers, 1, 0, target);
+            if (powers[max] == target)
+                soln++;
+            Console.WriteLine(soln);
+        }
+
+        public static string NextPermutation(string str)
+        {
+            int index = -1;
+            for(int i=str.Length-1;i>0;i--)
+            {
+                if(str[i]>str[i-1])
+                {
+                    index = i-1;
+                    break;
+                }
+            }
+            if (index == -1)
+                return "";
+
+            int nextGreaterElementIndex = -1;
+            for(int i = str.Length - 1; i > index; i--)
+            {
+                if (str[i] > str[index])
+                {
+                    nextGreaterElementIndex = i;
+                    break;
+                }                
+            }
+            str = str.Swap(index,nextGreaterElementIndex);
+            str = str.Reverse(index+1,str.Length-1);
+            return str;
+        }
 
     }
 }

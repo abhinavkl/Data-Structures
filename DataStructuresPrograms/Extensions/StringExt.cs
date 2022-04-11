@@ -21,5 +21,17 @@ namespace DataStructuresPrograms.Extensions
                 return new string(arr);
             }
         }
+
+        public static string Reverse(this string str, int left, int right)
+        {
+            char[] revPart = str.ToArray();
+            while (left <= right)
+            {
+                char temp = revPart[left];
+                revPart[left++] = revPart[right];
+                revPart[right--] = temp;
+            }
+            return new string(revPart);
+        }
     }
 }

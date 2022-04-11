@@ -16,30 +16,33 @@ namespace DataStructuresPrograms.Code.Print
         }
         internal static void Print<T>(T[,] arr)
         {
-            for(int i = 0; i < arr.GetLength(0); i++)
-            {
-                for(int j = 0; j < arr.GetLength(1); j++)
+            if (arr != null)
+                for (int i = 0; i < arr.GetLength(0); i++)
                 {
-                    Console.Write($"{arr[i,j]}\t");
+                    for (int j = 0; j < arr.GetLength(1); j++)
+                    {
+                        Console.Write($"{arr[i, j]}\t");
+                    }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
-            }
         }
         internal static void Print<T>(T[] arr)
         {
-            foreach(T i in arr)
-            {
-                Console.Write(i+" ");
-            }
+            if (arr != null)
+                foreach (T i in arr)
+                {
+                    Console.Write(i + " ");
+                }
             Console.WriteLine();
         }
 
         internal static void Print<T>(List<T> arr)
         {
-            foreach (T i in arr)
-            {
-                Console.Write(i + " ");
-            }
+            if (arr != null)
+                foreach (T i in arr)
+                {
+                    Console.Write(i + " ");
+                }
             Console.WriteLine();
         }
 
@@ -49,24 +52,26 @@ namespace DataStructuresPrograms.Code.Print
             {
                 for (int j = 0; j < matrix.ColumnIndex; j++)
                 {
-                    Console.Write($"{matrix.Get(i,j)}\t");
+                    Console.Write($"{matrix.Get(i, j)}\t");
                 }
                 Console.WriteLine();
             }
             Console.WriteLine();
         }
 
-        internal static void Print<T,S>(List<KeyValuePair<T,S>> pairs)
+        internal static void Print<T, S>(List<KeyValuePair<T, S>> pairs)
         {
-            foreach(var pair in pairs)
+            if(pairs!=null)
+            foreach (var pair in pairs)
             {
                 Console.WriteLine($"{pair.Key} : {pair.Value}");
             }
         }
 
-        internal static void Print<T,S>(Dictionary<T,S> pairs)
+        internal static void Print<T, S>(Dictionary<T, S> pairs)
         {
-            foreach (var pair in pairs)
+            if (pairs != null)
+                foreach (var pair in pairs)
             {
                 Console.WriteLine($"{pair.Key} : {pair.Value}");
             }
@@ -74,7 +79,7 @@ namespace DataStructuresPrograms.Code.Print
 
         internal static void Print(params object[] objects)
         {
-            foreach(dynamic obj in objects)
+            foreach (dynamic obj in objects)
             {
                 PrintObject.Print(obj);
             }

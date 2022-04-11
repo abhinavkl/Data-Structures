@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataStructuresPrograms.Code.Print;
+using DataStructuresPrograms.Extensions;
 using DataStructuresPrograms.Code.Objects;
 using System.Text.RegularExpressions;
 using DataStructuresPrograms.Code.Algo;
 using DataStructuresPrograms.Code.Basic;
 using DataStructuresPrograms.Code.Programs;
+using DataStructuresPrograms.DS.Arrays;
 
 namespace DataStructuresPrograms
 {
@@ -16,6 +18,7 @@ namespace DataStructuresPrograms
     {
         static void Main(string[] args)
         {
+            #region Advanced DS
             #region travelling sales person
             //int[,] travellingSales = new int[4,4] {
             //{ 0, 20, 42, 25 },
@@ -175,7 +178,7 @@ namespace DataStructuresPrograms
             //Backtracing.NQueen(8,null,0);
             //PrintObject.Print(Backtracing.NQueenSolution(8,new int[8,8],0));
             //PrintObject.Print(Backtracing.TargetSum(new int[] { 1,1,1,1,1},3));
-            Backtracing.SudokuSoln(new int[9, 9] {{5,3,0,0,7,0,0,0,0 },
+            /*Backtracing.SudokuSoln(new int[9, 9] {{5,3,0,0,7,0,0,0,0 },
                                                   {6,0,0,1,9,5,0,0,0 },
                                                   {0,9,8,0,0,0,0,6,0 },
                                                   {8,0,0,0,6,0,0,0,3 },
@@ -183,10 +186,54 @@ namespace DataStructuresPrograms
                                                   {7,0,0,0,2,0,0,0,6 },
                                                   {0,6,0,0,0,0,2,8,0 },
                                                   {0,0,0,4,1,9,0,0,5 },
-                                                  {0,0,0,0,8,0,0,7,0 }
-            });
+                                                  {0,0,0,0,8,0,0,7,0 }});
+            */
+
+            //Backtracing.PowerSum(45,2);
+            //Backtracing.NextPermutation("13542");
+            #endregion
+            #region Binary Search
+            //BinarySearch.FindFrequency(new int[] { 1,1,1,2,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6 },4);
+            //BinarySearch.MinimumDistanceAngryBirds(new int[] { 1, 2, 4, 8, 9 }, 3);
+            //Console.WriteLine(BinarySearch.GameOfGreed(new int[] { 31,40,12,20 },3));
+            //Console.WriteLine(BinarySearch.IsPerfectSquare(16));
+            //Console.WriteLine(BinarySearch.GetMinimumAttempts(7,14,3,8));
+            #endregion
+            #region Divide n Conquer
+            //PrintObject.Print((new int[] { 2,3,7,5,9,1,6,4,8,10 }.MergeSort()));
+            //PrintObject.Print(new int[] { 2, 3, 7, 4, 1, 6, 8, 5 }.QuickSort());
+            //PrintObject.Print(new int[] { 10,5,2,0,7,6,4}.QuickSelectPosition(5));
+            //PrintObject.Print((new int[] { 2,4,3,5,1}.InversionCount()));
+            //PrintObject.Print(new int[] { 9, 8, 6, 4, 2, 0, 1, 3, 5, 7,10 }.TernarySearch(1));
+            #endregion
+            #region Greedy
+            //Greedy.CoinsExchange(1273);
+            #endregion
+            #region Sorting
+            //PrintObject.Print(new List<int> { 5,6,1,2,8,3,10,4,7,9 }.HeapSort());
+            //PrintObject.Print(new int[] { 5,6,1,2,8,3,10,4,7,9 }.HeapSort());
+            //new List<int> { 5, 6, 1, 2, 8, 3, 10, 4, 7, 9 }.GetTopKElements(5);
+            //new List<int> { 5, 6, 1, 2, 8, 3, 10, 4, 7, 9 }.GetLeastKElements(5);
+            //int[] arr = ArrayExtensions.Generate1toN(20);
+            //arr.Rotate(12);
             #endregion
 
+            #endregion
+
+            #region DS
+            #region Arrays
+            #region Rotation
+            ArrayPrograms.Run();
+            #endregion
+
+
+            #endregion
+
+            #endregion
+
+
+            #region
+            #endregion
 
         }
     }

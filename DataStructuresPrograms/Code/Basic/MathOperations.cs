@@ -149,5 +149,17 @@ namespace DataStructuresPrograms.Code.Basic
             }
             return xy;
         }
+
+        public static double Log(double n,double bse)
+        {
+            return (Math.Log(n) / Math.Log(bse));
+        }
+
+        public static double NegativePower(double bse,double pow)
+        {
+            return Math.Pow(bse, Math.Pow(pow, -1));
+        }
+
+
     }
 }
