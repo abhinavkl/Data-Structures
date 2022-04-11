@@ -136,7 +136,7 @@
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
-    <Compile Include="DS\Arrays\Rotation.cs" />
+    <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
     <Compile Include="Code\Objects\Tree.cs" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStructuresPrograms.DS.Arrays.Rotations;
 
 namespace DataStructuresPrograms.DS.Arrays
 {
@@ -11,7 +12,7 @@ namespace DataStructuresPrograms.DS.Arrays
         public static void Run()
         {
             int[] arr = new int[] { 1,2,3,4,5,6,7 };
-            Rotation.Left(arr,2);
+            new RotateLeft(arr,2);
         }
     }
 }
