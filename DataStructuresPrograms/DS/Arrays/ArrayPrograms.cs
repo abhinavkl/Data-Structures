@@ -12,7 +12,8 @@ namespace DataStructuresPrograms.DS.Arrays
         public static void Run()
         {
             int[] arr = new int[] { 1,2,3,4,5,6,7 };
-            new RotateLeft(arr,2);
+            //new RotateLeft(arr,2);
+            new ReversalAlgorithm(arr,2);
         }
     }
 }

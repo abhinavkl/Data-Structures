@@ -48,6 +48,19 @@ namespace DataStructuresPrograms.Extensions
             return arr;
         }
 
+        public static void Rotate(this int[] arr)
+        {
+            arr.Rotate(0,arr.Length-1);
+        }
+
+        public static void Rotate(this int[] arr,int start,int end)
+        {
+            while (start < end)
+            {
+                arr.Swap(start++,end--);
+            }
+        }
+
         public static int GetNearestFloorNumber(this int[] arr, int number)
         {
             int start = 0;
