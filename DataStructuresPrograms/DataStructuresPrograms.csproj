@@ -136,6 +136,7 @@
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
+    <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\ReversalAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />

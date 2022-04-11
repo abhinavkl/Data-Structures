@@ -13,7 +13,8 @@ namespace DataStructuresPrograms.DS.Arrays
         {
             int[] arr = new int[] { 1,2,3,4,5,6,7 };
             //new RotateLeft(arr,2);
-            new ReversalAlgorithm(arr,2);
+            //new ReversalAlgorithm(arr,2);
+            new BlockSwapAlgorithm(arr,2);
         }
     }
 }
