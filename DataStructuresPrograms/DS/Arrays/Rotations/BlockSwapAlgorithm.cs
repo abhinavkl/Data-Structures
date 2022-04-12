@@ -13,12 +13,16 @@ namespace DataStructuresPrograms.DS.Arrays.Rotations
         /// at first end is array length
         /// 
         /// loop:
-        /// if rot is less than the end swap continuously last rot number of indices from end
-        /// now rot wont be changed, start wont be changed but end will be reduced by rot number.
+        /// [r1 r2 r3 e1 e2 e3 e4 e5] as rot < end-rot, we make last rot numbers in correct position.
+        /// after this step (end-rot to end) will come to required position. so we operate Left rotate over start to end-rot.
+        /// i.e, [r1 r2 r3 e1 e2] e3 e4 e5 
+        /// 
         /// 
         /// loop:
-        /// if rot is greater than end swap continuously then swap from start index with rot index and till end
-        /// (we either use end-rot or rot number of indices till it reaches half)
+        /// [r1 r2 r3 r4 r5 e1 e2 e3] as rot > end-rot, we make last end-rot numbers in correct position. 
+        /// so we take start to rot and rot to end-rot, where rot is changed to end-rot, after this step first end-rot elements in correct position.
+        /// So for next iteration we start from start+end-rot, to end. (r1 r2 r3 [r4 r5 e1 e2 e3]) now rot = rot-(end-rot), as (1,2,3,4,5)-(1,2,3)=2.
+        ///  
         /// 
         /// if both are same 
         /// then swap continuously from start with half till end.
