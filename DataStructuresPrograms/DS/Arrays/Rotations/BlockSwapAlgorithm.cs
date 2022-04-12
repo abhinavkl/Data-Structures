@@ -22,6 +22,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rotations
         /// [r1 r2 r3 r4 r5 e1 e2 e3] as rot > end-rot, we make last end-rot numbers in correct position. 
         /// so we take start to rot and rot to end-rot, where rot is changed to end-rot, after this step first end-rot elements in correct position.
         /// So for next iteration we start from start+end-rot, to end. (r1 r2 r3 [r4 r5 e1 e2 e3]) now rot = rot-(end-rot), as (1,2,3,4,5)-(1,2,3)=2.
+        /// 
         ///  
         /// 
         /// if both are same 

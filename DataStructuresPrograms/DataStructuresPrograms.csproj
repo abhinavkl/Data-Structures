@@ -139,6 +139,7 @@
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\ReversalAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
+    <Compile Include="DS\Arrays\Rotations\SearchInSortedRotatedArray.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
     <Compile Include="Code\Objects\Tree.cs" />
