@@ -138,6 +138,7 @@
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\FindPairInSortedRotateArray.cs" />
+    <Compile Include="DS\Arrays\Rotations\MaxSummationOfIndexNumberOnRotation.cs" />
     <Compile Include="DS\Arrays\Rotations\ReversalAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
     <Compile Include="DS\Arrays\Rotations\SearchInSortedRotatedArray.cs" />
