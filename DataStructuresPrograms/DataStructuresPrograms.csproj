@@ -137,10 +137,12 @@
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
+    <Compile Include="DS\Arrays\Rotations\FindMinimumElement.cs" />
     <Compile Include="DS\Arrays\Rotations\FindPairInSortedRotateArray.cs" />
     <Compile Include="DS\Arrays\Rotations\MaxSummationOfIndexNumberOnRotation.cs" />
     <Compile Include="DS\Arrays\Rotations\ReversalAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
+    <Compile Include="DS\Arrays\Rotations\RotationCount.cs" />
     <Compile Include="DS\Arrays\Rotations\SearchInSortedRotatedArray.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
