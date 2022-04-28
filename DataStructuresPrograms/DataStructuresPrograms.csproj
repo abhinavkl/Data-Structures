@@ -136,6 +136,9 @@
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\MaxMinAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\ReverseArray.cs" />
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\FindMinimumElement.cs" />
     <Compile Include="DS\Arrays\Rotations\FindPairInSortedRotateArray.cs" />
