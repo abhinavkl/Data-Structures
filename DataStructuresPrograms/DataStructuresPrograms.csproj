@@ -138,6 +138,7 @@
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
     <Compile Include="DS\Arrays\Rearrangements\MaxMinAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAside.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReverseArray.cs" />
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\FindMinimumElement.cs" />
@@ -147,6 +148,8 @@
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
     <Compile Include="DS\Arrays\Rotations\RotationCount.cs" />
     <Compile Include="DS\Arrays\Rotations\SearchInSortedRotatedArray.cs" />
+    <Compile Include="DS\Sorting\QuickSort.cs" />
+    <Compile Include="DS\Sorting\Sorter.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />
     <Compile Include="Extensions\PrimitiveExtensions.cs" />
     <Compile Include="Code\Objects\Tree.cs" />

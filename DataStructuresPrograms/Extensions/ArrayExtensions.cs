@@ -39,7 +39,7 @@ namespace DataStructuresPrograms.Extensions
         }
         public static int[] Swap(this int[] arr, int i, int j)
         {
-            if (i < arr.Length && j < arr.Length && arr[i] != arr[j])
+            if (i!=j && i < arr.Length && j < arr.Length && arr[i] != arr[j])
             {
                 arr[i] = arr[i] ^ arr[j];
                 arr[j] = arr[i] ^ arr[j];

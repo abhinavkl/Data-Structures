@@ -11,6 +11,7 @@ using DataStructuresPrograms.Code.Algo;
 using DataStructuresPrograms.Code.Basic;
 using DataStructuresPrograms.Code.Programs;
 using DataStructuresPrograms.DS.Arrays;
+using DataStructuresPrograms.DS.Sorting;
 
 namespace DataStructuresPrograms
 {
@@ -222,11 +223,11 @@ namespace DataStructuresPrograms
 
             #region DS
             #region Arrays
-            #region Rotation
             ArrayPrograms.Run();
             #endregion
 
-
+            #region Sorting
+            Sorter.Run();
             #endregion
 
             #endregion
