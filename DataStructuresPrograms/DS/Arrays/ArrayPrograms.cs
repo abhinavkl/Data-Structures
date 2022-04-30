@@ -34,6 +34,8 @@ namespace DataStructuresPrograms.DS.Arrays
             //new ReverseArray(arr);
             arr = new int[] { 42,11,23,72,01,34,98,57,82,61,121 };
             //new MaxMinAlternate(arr);
+            arr = new int[] { -1,-2,3,4,5,6,7,8,9,10,11,12 };
+            new PositivesAndNegativesAside(arr);
             #endregion
 
 

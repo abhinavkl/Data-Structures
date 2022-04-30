@@ -12,7 +12,7 @@ namespace DataStructuresPrograms.DS.Sorting
         {
 
             int[] arr = new int[] { 42, 11, 23, 72, 01, 34, 98, 57, 82, 61, 121 };
-            new QuickSort(arr);
+            //new QuickSort(arr);
         }
     }
 }
