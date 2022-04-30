@@ -136,6 +136,7 @@
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\AllLessNumbersTogether.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
     <Compile Include="DS\Arrays\Rearrangements\MaxMinAlternate.cs" />
     <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAside.cs" />
