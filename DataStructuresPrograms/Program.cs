@@ -216,7 +216,6 @@ namespace DataStructuresPrograms
             //new List<int> { 5, 6, 1, 2, 8, 3, 10, 4, 7, 9 }.GetTopKElements(5);
             //new List<int> { 5, 6, 1, 2, 8, 3, 10, 4, 7, 9 }.GetLeastKElements(5);
             //int[] arr = ArrayExtensions.Generate1toN(20);
-            //arr.Rotate(12);
             #endregion
 
             #endregion

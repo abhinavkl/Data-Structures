@@ -142,9 +142,9 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
                 right++;
 
 
-            arr.Rotate(left,mid);
-            arr.Rotate(mid + 1,right-1);
-            arr.Rotate(left,right-1);
+            arr.Reverse(left,mid);
+            arr.Reverse(mid + 1,right-1);
+            arr.Reverse(left,right-1);
         }
     }
 }

@@ -48,12 +48,12 @@ namespace DataStructuresPrograms.Extensions
             return arr;
         }
 
-        public static void Rotate(this int[] arr)
+        public static void Reverse(this int[] arr)
         {
-            arr.Rotate(0,arr.Length-1);
+            arr.Reverse(0,arr.Length-1);
         }
 
-        public static void Rotate(this int[] arr,int start,int end)
+        public static void Reverse(this int[] arr,int start,int end)
         {
             while (start < end)
             {

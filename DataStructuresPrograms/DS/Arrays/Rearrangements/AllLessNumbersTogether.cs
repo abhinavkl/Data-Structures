@@ -44,7 +44,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
         static int Solver(int[] arr,int k)
         {
             int allLessCount = arr.Where(i=> i<=k).Count();
-            int curSwaps = arr.Take(allLessCount).Where(i => i <= k).Count();
+            int curSwaps = arr.Take(allLessCount).Where(i => i > k).Count();
 
             int minSwaps = curSwaps;
             for(int i = 0, j = allLessCount; j < arr.Length; i++, j++)

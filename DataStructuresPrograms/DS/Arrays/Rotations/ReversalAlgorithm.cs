@@ -18,9 +18,9 @@ namespace DataStructuresPrograms.DS.Arrays.Rotations
         /// <param name="rot"></param>
         public ReversalAlgorithm(int[] arr,int rot)
         {
-            arr.Rotate(0,rot-1);
-            arr.Rotate(rot,arr.Length-1);
-            arr.Rotate();
+            arr.Reverse(0,rot-1);
+            arr.Reverse(rot,arr.Length-1);
+            arr.Reverse();
         }
 
         
