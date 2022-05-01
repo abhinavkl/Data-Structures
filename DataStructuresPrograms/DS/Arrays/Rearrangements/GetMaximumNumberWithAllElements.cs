@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataStructuresPrograms.DS.Arrays.Rearrangements
 {
-    internal class GetMaximumNumber
+    internal class GetMaximumNumberWithAllElements
     {
-        public GetMaximumNumber(int[] arr)
+        public GetMaximumNumberWithAllElements(int[] arr)
         {
             Solver(arr);
         }

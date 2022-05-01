@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataStructuresPrograms.DS.Arrays.Rearrangements
 {
-    internal class PositivesAndNegativesAside
+    internal class PositivesAndNegativesAsideMergeSortApproach
     {
-        public PositivesAndNegativesAside(int[] arr)
+        public PositivesAndNegativesAsideMergeSortApproach(int[] arr)
         {
             //QuickSolve(arr);
             MergeSolve(arr);
@@ -17,6 +17,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
 
         /// <summary>
         /// we are taking a pointer to rotate the array and a pointer to swap the negative numbers to left.
+        /// we dont loose the order of elements
         /// 
         /// </summary>
         /// <param name="arr"></param>

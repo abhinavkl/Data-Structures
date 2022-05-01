@@ -46,7 +46,12 @@ namespace DataStructuresPrograms.DS.Arrays
             int[] ind = new int[] { 3, 0, 4, 1, 2 };
             //new ReorderAnArrayWithGivenIndices(arr,ind);
             arr = new int[] { 1, 34, 3, 98, 9, 76, 45, 4 };
-            new GetMaximumNumber(arr);
+            //new GetMaximumNumberWithAllElements(arr);
+            arr = new int[]{ 1, -3, 5, 6, -3, 6, 7, -4, 9, 10};
+            //new PositiveNegativesSideBySideWithoutOrder(arr);
+            arr = new int[] { 1, 3, 2, 4, 7, 6, 9, 10 };
+            //new EvenAndOddAsideQuickSortApproach(arr);
+            new EvenAndOddSideBySideAingleMergeLoopApproach(arr);
             #endregion
 
 

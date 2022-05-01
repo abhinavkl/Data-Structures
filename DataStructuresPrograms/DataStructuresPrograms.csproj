@@ -138,11 +138,15 @@
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
     <Compile Include="DS\Arrays\Rearrangements\AllLessNumbersTogether.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
-    <Compile Include="DS\Arrays\Rearrangements\GetMaximumNumber.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\EvenAndOddSideBySideAingleMergeLoopApproach.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\EvenAndOddAsideQuickSortApproach.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\GetMaximumNumberWithAllElements.cs" />
     <Compile Include="DS\Arrays\Rearrangements\NormalMaxMinAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\PositiveNegativesSideBySideSingleMergeLoopApproach.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAsideQuickSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReorderAnArrayWithGivenIndices.cs" />
     <Compile Include="DS\Arrays\Rearrangements\StandardMaxMinAlternate.cs" />
-    <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAside.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAsideMergeSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReverseArray.cs" />
     <Compile Include="DS\Arrays\Rearrangements\StandardMinMaxAlternate.cs" />
     <Compile Include="DS\Arrays\Rearrangements\StandardMinMaxAlternateWithExtraSpace.cs" />
