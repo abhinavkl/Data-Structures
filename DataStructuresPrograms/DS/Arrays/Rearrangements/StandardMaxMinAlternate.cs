@@ -8,7 +8,8 @@ using DataStructuresPrograms.Extensions;
 
 namespace DataStructuresPrograms.DS.Arrays.Rearrangements
 {
-    internal class MaxMinAlternate
+    //first max, first min, second max, second min...
+    internal class StandardMaxMinAlternate
     {
         /// <summary>
         /// 
@@ -29,11 +30,13 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
         /// 
         /// and at the end, to get new numbers we have divide them with [div] i.e, max
         /// 
+        /// Time  Complexity :- O(nlogn)
+        /// Space Complexity :- O(1)
         /// 
-        /// 
+        ///  
         /// </summary>
         /// <param name="arr"></param>
-        public MaxMinAlternate(int[] arr)
+        public StandardMaxMinAlternate(int[] arr)
         {
             Array.Sort(arr);
             MaxMinAlternateSolver(arr);

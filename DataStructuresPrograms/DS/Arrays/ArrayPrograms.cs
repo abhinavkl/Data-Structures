@@ -33,11 +33,20 @@ namespace DataStructuresPrograms.DS.Arrays
             arr = new int[] { 4, 5, 1, 2 };
             //new ReverseArray(arr);
             arr = new int[] { 42,11,23,72,01,34,98,57,82,61,121 };
-            //new MaxMinAlternate(arr);
+            //new StandardMaxMinAlternate(arr);
             arr = new int[] { -1,-2,3,4,-5,6,-7,-8,9,10,11,-12 };
             //new PositivesAndNegativesAside(arr);
             arr = new int[] { 10, 1, 2, 3, 11, 4, 5, 7, 6 };
-            new AllLessNumbersTogether(arr,5);
+            //new AllLessNumbersTogether(arr,5);
+            //new NormalMaxMinAlternate(arr);
+            arr = new int[] { 42, 11, 23, 72, 01, 34, 98, 57, 82, 61, 121 };
+            //new StandardMinMaxAlternate(arr);
+            //new StandardMinMaxAlternateWithExtraSpace(arr);
+            arr = new int[] { 50, 40, 70, 60, 90 };
+            int[] ind = new int[] { 3, 0, 4, 1, 2 };
+            //new ReorderAnArrayWithGivenIndices(arr,ind);
+            arr = new int[] { 1, 34, 3, 98, 9, 76, 45, 4 };
+            new GetMaximumNumber(arr);
             #endregion
 
 

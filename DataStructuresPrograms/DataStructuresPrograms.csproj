@@ -138,9 +138,14 @@
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
     <Compile Include="DS\Arrays\Rearrangements\AllLessNumbersTogether.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
-    <Compile Include="DS\Arrays\Rearrangements\MaxMinAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\GetMaximumNumber.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\NormalMaxMinAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\ReorderAnArrayWithGivenIndices.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\StandardMaxMinAlternate.cs" />
     <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAside.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReverseArray.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\StandardMinMaxAlternate.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\StandardMinMaxAlternateWithExtraSpace.cs" />
     <Compile Include="DS\Arrays\Rotations\BlockSwapAlgorithm.cs" />
     <Compile Include="DS\Arrays\Rotations\FindMinimumElement.cs" />
     <Compile Include="DS\Arrays\Rotations\FindPairInSortedRotateArray.cs" />
