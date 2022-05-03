@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataStructuresPrograms.DS.Arrays.miscellaneous;
 using DataStructuresPrograms.DS.Arrays.Rearrangements;
 using DataStructuresPrograms.DS.Arrays.Rotations;
 
@@ -37,7 +38,7 @@ namespace DataStructuresPrograms.DS.Arrays
             arr = new int[] { -1,-2,3,4,-5,6,-7,-8,9,10,11,-12 };
             //new PositivesAndNegativesAside(arr);
             arr = new int[] { 10, 1, 2, 3, 11, 4, 5, 7, 6 };
-            //new AllLessNumbersTogether(arr,5);
+            //new MinSwapsforAllLessNumbersTogether(arr,5);
             //new NormalMaxMinAlternate(arr);
             arr = new int[] { 42, 11, 23, 72, 01, 34, 98, 57, 82, 61, 121 };
             //new StandardMinMaxAlternate(arr);
@@ -49,9 +50,15 @@ namespace DataStructuresPrograms.DS.Arrays
             //new GetMaximumNumberWithAllElements(arr);
             arr = new int[]{ 1, -3, 5, 6, -3, 6, 7, -4, 9, 10};
             //new PositiveNegativesSideBySideWithoutOrder(arr);
-            arr = new int[] { 1, 3, 2, 4, 7, 6, 9, 10 };
+            arr = new int[] {5,4,3,2,1};
             //new EvenAndOddAsideQuickSortApproach(arr);
-            new EvenAndOddSideBySideAingleMergeLoopApproach(arr);
+            //new EvenAndOddSideBySideAingleMergeLoopApproach(arr);
+            //new EvenAndOddAsideMergeSortApproach(arr);
+            //new Size3SortedSubsequence(arr);
+            arr = new int[] { 0,0,0,1, 0, 1, 1, 1, 0, 0,1,0,1,1,1,0,0 };
+            //new LongestSubArrayWithEqual0s1s(arr);
+            arr = new int[] { 10, 1, 2, 3, 11, 4, 5, 7, 6 };
+            //new ReplaceEveryElementWithGreaterElementFromItsRight(arr);
             #endregion
 
 

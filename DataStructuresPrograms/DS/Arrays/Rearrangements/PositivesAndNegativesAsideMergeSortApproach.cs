@@ -11,28 +11,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
     {
         public PositivesAndNegativesAsideMergeSortApproach(int[] arr)
         {
-            //QuickSolve(arr);
             MergeSolve(arr);
-        }
-
-        /// <summary>
-        /// we are taking a pointer to rotate the array and a pointer to swap the negative numbers to left.
-        /// we dont loose the order of elements
-        /// 
-        /// </summary>
-        /// <param name="arr"></param>
-        static void QuickSolve(int[] arr)
-        {
-            int pivot = 0;
-            int smallerElementIndex = -1;
-
-            for(int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] < pivot)
-                {
-                    arr.Swap(++smallerElementIndex, i);
-                }
-            }
         }
 
         static void MergeSolve(int[] arr)
@@ -43,6 +22,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
         /// <summary>
         /// 
         /// devide the array into two parts over mid, and hope the actual action is executed by Merge function perfectly.
+        /// we dont loose order here
         /// 
         /// </summary>
         /// <param name="arr"></param>

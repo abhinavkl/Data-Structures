@@ -136,8 +136,10 @@
     <Compile Include="Code\Programs\LinearDiophantineEquations.cs" />
     <Compile Include="Code\Programs\MatrixMultiplicationInverse.cs" />
     <Compile Include="DS\Arrays\ArrayPrograms.cs" />
-    <Compile Include="DS\Arrays\Rearrangements\AllLessNumbersTogether.cs" />
+    <Compile Include="DS\Arrays\miscellaneous\LongestSubArrayWithEqual0s1s.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\MinSwapsforAllLessNumbersTogether.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\EvenAndOddAsideMergeSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\EvenAndOddSideBySideAingleMergeLoopApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\EvenAndOddAsideQuickSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\GetMaximumNumberWithAllElements.cs" />
@@ -145,6 +147,8 @@
     <Compile Include="DS\Arrays\Rearrangements\PositiveNegativesSideBySideSingleMergeLoopApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAsideQuickSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReorderAnArrayWithGivenIndices.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\ReplaceEveryElementWithGreaterElementFromItsRight.cs" />
+    <Compile Include="DS\Arrays\Rearrangements\Size3SortedSubsequence.cs" />
     <Compile Include="DS\Arrays\Rearrangements\StandardMaxMinAlternate.cs" />
     <Compile Include="DS\Arrays\Rearrangements\PositivesAndNegativesAsideMergeSortApproach.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ReverseArray.cs" />
@@ -158,6 +162,9 @@
     <Compile Include="DS\Arrays\Rotations\RotateLeft.cs" />
     <Compile Include="DS\Arrays\Rotations\RotationCount.cs" />
     <Compile Include="DS\Arrays\Rotations\SearchInSortedRotatedArray.cs" />
+    <Compile Include="DS\DynamicProgramming\Arrays\MaxProductSubArray.cs" />
+    <Compile Include="DS\DynamicProgramming\DPexecutor.cs" />
+    <Compile Include="DS\DynamicProgramming\Arrays\LongestBitonicSubsequence.cs" />
     <Compile Include="DS\Sorting\QuickSort.cs" />
     <Compile Include="DS\Sorting\Sorter.cs" />
     <Compile Include="Extensions\ListExtensions.cs" />

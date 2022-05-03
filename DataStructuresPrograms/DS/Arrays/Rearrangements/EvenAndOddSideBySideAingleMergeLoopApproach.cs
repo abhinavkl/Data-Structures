@@ -11,7 +11,7 @@ namespace DataStructuresPrograms.DS.Arrays.Rearrangements
     {
         public EvenAndOddSideBySideAingleMergeLoopApproach(int[] arr)
         {
-            Solver(arr);
+            //Solver(arr);
         }
 
 

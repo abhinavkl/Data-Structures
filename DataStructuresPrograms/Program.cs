@@ -12,6 +12,7 @@ using DataStructuresPrograms.Code.Basic;
 using DataStructuresPrograms.Code.Programs;
 using DataStructuresPrograms.DS.Arrays;
 using DataStructuresPrograms.DS.Sorting;
+using DataStructuresPrograms.DS.DynamicProgramming;
 
 namespace DataStructuresPrograms
 {
@@ -232,8 +233,13 @@ namespace DataStructuresPrograms
             #endregion
 
 
+            #region DP programs
+            DPexecutor.Run();
+            #endregion
+
             #region
             #endregion
+
 
         }
     }

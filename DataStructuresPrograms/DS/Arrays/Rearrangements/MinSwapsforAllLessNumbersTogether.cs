@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataStructuresPrograms.DS.Arrays.Rearrangements
 {
-    internal class AllLessNumbersTogether
+    internal class MinSwapsforAllLessNumbersTogether
     {
-        public AllLessNumbersTogether(int[] arr,int k)
+        public MinSwapsforAllLessNumbersTogether(int[] arr,int k)
         {
             Solver(arr,k);
         }

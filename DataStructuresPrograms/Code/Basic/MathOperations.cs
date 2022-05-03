@@ -160,6 +160,22 @@ namespace DataStructuresPrograms.Code.Basic
             return Math.Pow(bse, Math.Pow(pow, -1));
         }
 
+        public static int Max(params int[] arr)
+        {
+            foreach(var i in arr)
+            {
+                arr[0] = Math.Max(arr[0],i);
+            }
+            return arr[0];
+        }
 
+        public static int Min(params int[] arr)
+        {
+            foreach (var i in arr)
+            {
+                arr[0] = Math.Min(arr[0], i);
+            }
+            return arr[0];
+        }
     }
 }
