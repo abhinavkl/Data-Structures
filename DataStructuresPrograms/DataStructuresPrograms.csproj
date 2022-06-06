@@ -140,8 +140,11 @@
     <Compile Include="DS\Arrays\miscellaneous\MaximumCircularSubArraySum.cs" />
     <Compile Include="DS\Arrays\Order\KthLargestElement.cs" />
     <Compile Include="DS\Arrays\Order\KthLargestQuickSelect.cs" />
+    <Compile Include="DS\Arrays\Order\KthLargestRandomQuickSelect.cs" />
     <Compile Include="DS\Arrays\Order\KthSmallestElement.cs" />
+    <Compile Include="DS\Arrays\Order\KthSmallestIn2DSortedArray.cs" />
     <Compile Include="DS\Arrays\Order\KthSmallestQuickSelect.cs" />
+    <Compile Include="DS\Arrays\Order\KthSmallestRandomQuickSelect.cs" />
     <Compile Include="DS\Arrays\Rearrangements\MaximumSumOfConsecutiveDifferencesInCircularArray.cs" />
     <Compile Include="DS\Arrays\Rearrangements\MinSwapsforAllLessNumbersTogether.cs" />
     <Compile Include="DS\Arrays\Rearrangements\ArrayOfIisI.cs" />

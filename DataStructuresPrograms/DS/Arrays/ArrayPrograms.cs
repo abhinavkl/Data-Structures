@@ -61,7 +61,7 @@ namespace DataStructuresPrograms.DS.Arrays
             //new SortArrayAccordingToAnotherArray(arr, refArr);
             arr = new int[] { 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1 };
             //new ZeroIndexChangeTo1ForLongestContinuousSequence(arr);
-            arr =new int[]{ 1, 14, 5, 20, 4, 2, 54, 20, 87, 98, 3, 1, 32 };
+            arr = new int[] { 1, 14, 5, 20, 4, 2, 54, 20, 87, 98, 3, 1, 32 };
             //new ThreeWayPartitioning(arr, 14, 20);
             arr = new int[] { 10, 15, 25 };
             refArr = new int[] { 1, 5, 20, 30 };
@@ -69,11 +69,20 @@ namespace DataStructuresPrograms.DS.Arrays
             #endregion
 
             #region Order Statistics
-            arr = new int[] { 7, 10, 4, 3, 20, 15 ,9,8,6,13,12};
+            arr = new int[] { 7, 10, 4, 3, 20, 15, 9, 8, 6, 13, 12 };
             //new KthSmallestElement(arr,3);
             //new KthLargestElement(arr,3);
-            new KthSmallestQuickSelect(arr, 3);
+            //new KthSmallestQuickSelect(arr, 3);
             //new KthLargestQuickSelect(arr, 3);
+            //new KthSmallestRandomQuickSelect(arr, 4);
+            //new KthLargestRandomQuickSelect(arr,4);
+            int[,] arr2d = {
+                            { 10, 20, 30, 40 },
+                            { 15, 25, 35, 45 },
+                            { 25, 29, 37, 48 },
+                            { 32, 33, 39, 50 },
+                           };
+            new KthSmallestIn2DSortedArray(arr2d, 4);
             #endregion
 
 
